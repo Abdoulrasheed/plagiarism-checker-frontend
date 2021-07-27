@@ -1,0 +1,64 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 43px 0 42px;
+    height: 12.3vh;
+    position: fixed;
+    background-color: #fff;
+    width: 100vw;
+    z-index: 1;
+}
+.nav a {
+    text-decoration: none;
+}
+.navItems {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+}
+.navItems li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2b5597;
+    padding: 15px 15px;
+}
+.navItems li:hover {
+    font-weight: bold;
+}
+.actionContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.languageIcon {
+    content: url('../images/globe.svg'); 
+    width: 15px;
+    margin-left: 50px;
+}
+.languageText {
+    font-size: 15px;
+    color: #2b5597;
+    margin: 10px;
+}
+.callToaAtion {
+    color: #fff;
+    background-color: red;
+    padding: 10px 10px;
+    border: 0;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.callToaAtion:hover{
+    background-color: #CC9552;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+}

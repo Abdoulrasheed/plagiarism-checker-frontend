@@ -1,0 +1,63 @@
+.watchContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.subtitle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #fff;
+    margin-top: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.subtitle span {
+    color: rgb(2, 9, 71);
+}
+.title p {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.title {
+    font-size: 64px;
+    line-height: 74px;
+    font-weight: 700;
+    color: #fff;
+    width: 74vw;
+    text-align: center;
+    overflow-y: hidden;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.videoBg {
+    position: absolute;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.videoBgContainer{
+    flex: 1;
+    width: 100vw;
+    height: 100vh;
+}
+.videoBgContainer:after{
+    content: ''; 
+    display: block; 
+    height: 100%; 
+    background: rgba(93, 107, 146, .9);
+    mix-blend-mode: multiply
+}
+.info {
+    position: absolute;
+}
+.actionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.actionContainer h4 {
+    color: #c98028;
+}

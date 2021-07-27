@@ -1,0 +1,279 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(27, 48, 70);
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    overflow: hidden;
+}
+.uploadContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dragContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    height: 60vh;
+}
+.dragIcon, .dropIcon {
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+}
+.dragIcon {
+    background-image: url('../images/upload.svg');
+}
+.dropIcon {
+    background-image: url('../images/drop.svg');
+}
+.dragTitle {
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+.dragText {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+}
+.mainAppContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 20px;
+    width: 100vw;
+    background-color: rgb(27, 48, 70);
+    height: 12vh;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/logo.svg");
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+.title {
+    color:rgb(255, 255, 255);
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.fileDetailContainer {
+    margin-left: 40px;
+}
+.filenameContainer {
+    display: flex;
+}
+.fileIcon {
+    width: 15px;
+    height: 15px;
+    background-image: url("../images/file.svg");
+    background-repeat: no-repeat;
+}
+.filename {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.lastUpdated {
+    color: rgba(250, 250, 250, 0.8);
+    font-size: 12px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.plagiarismPercentageProgressContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45vw;
+    height: 50px;
+    margin-left: 75px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 23px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 23px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 23px 2px rgba(0,0,0,0.75);
+}
+.plagiarismPercentageText {
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.subHeader {
+    background-color: rgb(255, 255, 255);    
+    width: 100vw;
+    height: 8vh;
+}
+.subHeaderLoader {
+    animation: move 2s forwards ease infinite;
+    width: 10px;
+    height: 8vh;
+    background-color: #1B3046;
+    position: absolute;
+    box-shadow: 1px 3px 67px 15px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 3px 67px 15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 3px 67px 15px rgba(0,0,0,0.75);
+}
+.scanningText {
+    color: rgb(253, 0, 0);
+    font-weight: bold;
+}
+.source {
+    width: 30vw;
+    height: 60px;
+    display: flex;
+    margin: 2px 50px;
+    cursor: pointer;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    background-color:rgb(27, 48, 70);
+}
+.sourcePlaceholder {
+    background-color:rgb(27, 48, 70);
+    width: 30vw;
+    height: 60px;
+}
+.sourcePlaceholder div {
+    position: absolute;
+    left: 20;
+    animation: moveSmall 2s forwards ease infinite;
+    width: 5px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 1px 3px 67px 15px rgba(255,255,255,0.75);
+-webkit-box-shadow: 1px 3px 67px 15px rgba(255,255,255,0.75);
+-moz-box-shadow: 1px 3px 67px 15px rgba(255,255,255,0.75);
+}
+.source:hover {
+    margin-left: 2px;
+}
+.globeIcon {
+    background-image: url("../images/globe-solid.svg");
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+}
+.source a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 320px;
+}
+.edge {
+    width: 10px;
+    height: 60px;
+    background-color: rgb(236, 78, 78);
+}
+.workarea {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+}
+.sourcesPlaceholderArea {
+    width: 30vw;
+    height: 80vh;
+    background-color: rgb(184, 232, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.sourcesContentArea {
+    width: 30vw;
+    height: 80vh;
+    display: flex;
+    overflow-y: scroll;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(184, 232, 247);
+}
+.sourceText {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    line-height: 8vh;
+}
+.sourceCountContainer {
+    height: 8vh;
+    display: flex;
+    margin: 0 100px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}   
+.textareaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    overflow: hidden;
+    background-color: rgb(226, 213, 213);
+}
+.textarea {
+    overflow-y: scroll;
+    width: 60vw;
+    height: 75vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -22px 1px 112px -22px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -22px 1px 112px -22px rgba(0,0,0,0.75);
+    -moz-box-shadow: -22px 1px 112px -22px rgba(0,0,0,0.75);
+}
+.textareaOverlay {
+    position: absolute;
+    width: 60vw;
+    height: 75vh;
+    background-image: url('../images/bookscan.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(27, 48, 70, 0.6);
+}
+.textarea::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+.textarea::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(201, 146, 146, 0.3);
+}
+
+.textarea::-webkit-scrollbar-thumb {
+  background-color: #ee3232;
+  outline: 1px solid rgb(180, 173, 173);
+}
+@keyframes move {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 99vw;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes moveSmall {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 30vw;
+    }
+    100% {
+        left: 0;
+    }
+}
